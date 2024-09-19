@@ -76,7 +76,7 @@ export default function Home() {
         updateGame(checkboxListState);
         setTime(time + 1);
       }        
-    }, 500);
+    }, 100);
 
     //Clearing the interval
     return () => clearInterval(interval);
