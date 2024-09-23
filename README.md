@@ -4,9 +4,7 @@
 You can try this game here:
 [https://game-of-life-next-kappa.vercel.app/](https://game-of-life-next-kappa.vercel.app/)
 
-Important! : this game only works in browser with 1024x768 resolution:
-
-![image](https://github.com/user-attachments/assets/d69ec4be-9b69-4c8d-b66a-79b818f68c33)
+Important! : now the game works the same in all resolutions, but may be hard to click in small screens...
 
 
 Made based on this wikipedia article:
