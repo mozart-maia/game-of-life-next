@@ -90,7 +90,7 @@ export default function Home() {
 
   function handleClearInterval(){
     setIntervalRunning(false);
-    setTime(0);
+    // setTime(0);
   }
 
 
