@@ -109,15 +109,26 @@ export default function Home() {
 
 
   return (
-    <main className="h-screen w-full bg-slate-300">
-      <div className="justify-center">{time}</div>
-      <div className=" grid grid-cols-2">
-        <button onClick={handleStartInterval} className="border border-slate-900 rounded-md bg-green-500 hover:bg-green-400 ">Start</button>
-        <button onClick={handleClearInterval} className="border border-slate-900 rounded-md bg-yellow-500 hover:bg-yellow-400">Pause</button>
+    <main className="w-screen h-screen flex flex-col items-center justify-center bg-gray-100 p-4">
+      <h1 className="text-2xl font-bold mb-4">Conway's Game of Life (58x58)</h1>
+      <h2 className="text-xl font-bold mb-4">Iterations: {time}</h2>
+      {/* <div className="">{time}</div> */}
+      <div className=" grid grid-cols-2 space-x-2">
+        <button onClick={handleStartInterval} className="border p-1  rounded-md bg-green-500 hover:bg-green-400 ">Start</button>
+        <button onClick={handleClearInterval} className="border px-2  rounded-md bg-yellow-500 hover:bg-yellow-400">Pause</button>
 
       </div>
-      <div className="bg-blue-700 m-auto w-3/4 p-1">
+      <div className="w-full items-center mt-2 max-w-[70vw] max-h-[80vh] overflow-auto bg-white rounded-sm shadow-lg">
+      <div 
+          className="grid"
+          style={{
+            gridTemplateColumns: `repeat(58, minmax(0, 1fr))`,
+            width: '60vw', // Adjust this value to change the overall size of the grid
+            height: '35vw',
+          }}
+        >
         { renderCheckbox() }
+        </div>
       </div>      
     </main>
   );
