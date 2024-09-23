@@ -110,7 +110,7 @@ export default function Home() {
 
   return (
     <main className="w-screen h-screen flex flex-col items-center justify-center bg-gray-100 p-4">
-      <h1 className="text-2xl font-bold mb-4">Conway's Game of Life (58x58)</h1>
+      <h1 className="text-2xl font-bold mb-4">Conway's Game of Life (58x29)</h1>
       <h2 className="text-xl font-bold mb-4">Iterations: {time}</h2>
       {/* <div className="">{time}</div> */}
       <div className=" grid grid-cols-2 space-x-2">
